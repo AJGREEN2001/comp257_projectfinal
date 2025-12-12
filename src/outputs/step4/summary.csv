@@ -1,0 +1,5 @@
+method,params,silhouette,purity,notes
+KMeans,k=30 (best by silhouette),0.26663169264793396,0.6376811594202898,k chosen by silhouette over candidate grid
+KMeans,k=20 (forced),0.21719692647457123,0.4985507246376812,forced to match known number of subjects
+Agglomerative,"linkage=ward, k=20",0.21066735684871674,0.5391304347826087,linkage chosen by silhouette among ward/complete/average
+DBSCAN,"eps in [2.0, 2.5, 3.0, 3.5], min_samples in [3, 5, 8]",,,no stable multi-cluster solution found in tested grid
